@@ -1,0 +1,72 @@
+/* Animated colorful background */
+html {
+    background: linear-gradient(
+        120deg,
+        #a1c4fd,
+        #c2e9fb,
+        #d4befe,
+        #fbc2eb
+    );
+    background-size: 400% 400%;
+    animation: gradientShift 25s ease infinite;
+}
+
+/* Main content card */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 40px 30px;
+    line-height: 1.6;
+    color: #222;
+
+    background-color: rgba(255, 255, 255, 0.88);
+    border-radius: 14px;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+/* Links */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Contact / links section */
+.links {
+    margin-top: 30px;
+}
+
+.links p {
+    margin-bottom: 8px;
+}
+
+/* Gradient animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
